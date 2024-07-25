@@ -1,5 +1,5 @@
-AM_CFLAGS = -I$(top_srcdir)/include -I$(top_srcdir)/external/jssy/jssy/ $(libimg4tool_CFLAGS) $(libimg3tool_CFLAGS) $(libpatchfinder_CFLAGS) $(libgeneral_CFLAGS) $(libfragmentzip_CFLAGS)
-AM_LDFLAGS = -L$(top_srcdir)/libipatcher $(libimg4tool_LIBS) $(libimg3tool_LIBS) $(libpatchfinder_LIBS) $(libgeneral_LIBS) $(libfragmentzip_LIBS)
+AM_CFLAGS = -I$(top_srcdir)/include -I$(top_srcdir)/external/jssy/jssy/ $(GLOBAL_CFLAGS) $(libimg4tool_CFLAGS) $(libimg3tool_CFLAGS) $(libpatchfinder_CFLAGS) $(libgeneral_CFLAGS) $(libfragmentzip_CFLAGS)
+AM_LDFLAGS = -L$(top_srcdir)/libipatcher $(GLOBAL_LDFLAGS) $(libimg4tool_LIBS) $(libimg3tool_LIBS) $(libpatchfinder_LIBS) $(libgeneral_LIBS) $(libfragmentzip_LIBS)
 
 noinst_LTLIBRARIES = libjssy.la
 
